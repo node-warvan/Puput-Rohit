@@ -425,8 +425,8 @@
             var presence = document.getElementById('form-presence').value;
             var comment = document.getElementById('form-comment').value;
             var presenceText = presence == "1" ? "Hadir" : (presence == "2" ? "Berhalangan" : "Konfirmasi Kehadiran");
-            var message = "Nama: " + name + "%0A" + "Kehadiran: " + presenceText + "%0A" + "Ucapan & Doa: " + comment;
-            var phoneNumber = "628123456789"; // Ganti dengan nomor tujuan
+            var message = "Nama: " + name + "\n" + "Kehadiran: " + presenceText + "\n" + "Ucapan & Doa: " + comment;
+            var phoneNumber = "6283897425173"; // Ganti dengan nomor tujuan
 
             var whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
             window.open(whatsappURL, "_blank");
